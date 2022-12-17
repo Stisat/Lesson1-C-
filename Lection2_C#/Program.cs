@@ -58,12 +58,32 @@
 // Console.WriteLine(max);
 
 // Таже программа через массив array:
-
-int [] array = {9, 12, 15, 25, 1, 6, 18, 66, 1};
-// array[0] = 10;
-// Console.WriteLine(array[0]);
-int index = 0;
+// Массив задаем через RANDOM;
+void RanArray(int [] collection)
+{
+    int size = collection.Length;
+    int index = 0;
+    while (index < size)
+    {
+        collection[index] = new Random().Next(1, 10);
+        index++;
+    }
+}
+void PrintArray(int[] col)
+{
+    int count = col.Length;
+    int position = 0;
+    while (position < count)
+    {
+        Console.Write($"{col[position]}. ");
+        position++;
+    }
+}
+int [] array = new int[10]; // задание пустого массива на 10 элементов;
+RanArray(array);
+PrintArray(array);
 int size = array.Length;
+int index = 0;
 int max = array[1];
 while (index<size)
 {
@@ -73,4 +93,5 @@ while (index<size)
     }
     index++;    
 }
+Console.WriteLine();
 Console.WriteLine(max);
