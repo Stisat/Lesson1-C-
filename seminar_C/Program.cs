@@ -1,18 +1,10 @@
-﻿int a = 5, b = 7;
-int size = 2;
-int count = 0;
-int max = a;
+﻿// Console.Write("Введите первое число: ");
+// int numFirst = Convert.ToInt32(Console.ReadLine());
 
-while ( count < size )
-{
-    if ( max > a )
-    {
-        max == a;
-    }
-    else
-    {
-        max == b;
-    }
-    count = count + 1;
-}
-print.WriteLine(max);
+// Console.Write("Введите второе число: ");
+// int numSecond = Convert.ToInt32(Console.ReadLine());
+
+// if (numFirst == numSecond*numSecond)
+//     Console.Write($"Число {numFirst} является квадратом {numSecond}");
+// else 
+//     Console.Write($"Число {numFirst} не является квадратом {numSecond}");
