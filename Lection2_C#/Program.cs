@@ -79,19 +79,29 @@ void PrintArray(int[] col)
         position++;
     }
 }
+
+int Max(int [] mass)
+{
+    int size = mass.Length;
+    int index = 0;
+    int max = mass[1];
+    while (index<size)
+    {
+        if (mass[index] > max)
+        {
+            max = mass[index];
+        }
+        index++;
+    }
+    return max;
+}
+
 int [] array = new int[10]; // задание пустого массива на 10 элементов;
 RanArray(array);
 PrintArray(array);
-int size = array.Length;
-int index = 0;
-int max = array[1];
-while (index<size)
-{
-    if (array[index] > max)
-    {
-    max = array[index];
-    }
-    index++;    
-}
+
+int Maximum = Max(array);
+
+
 Console.WriteLine();
-Console.WriteLine(max);
+Console.WriteLine(Maximum);
