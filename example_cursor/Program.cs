@@ -19,17 +19,17 @@ int count = 0;
 while (count < 10000)
 {
     int what = new Random().Next(0, 3);
-    if(what == 0)
+    if (what == 0)
     {
         x = (x+xA)/2;
         y = (y+yA)/2;
     }
-     if(what == 1)
+    if (what == 1)
     {
         x = (x+xB)/2;
         y = (y+yB)/2;
     }
-     if(what == 2)
+    if(what == 2)
     {
         x = (x+xC)/2;
         y = (y+yC)/2;
