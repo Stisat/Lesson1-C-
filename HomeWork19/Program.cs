@@ -1,6 +1,6 @@
 ﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
-Console.WriteLine("Введите пятизначное число: "); // программа требует пятизначное число, но код универсальный для любого числа
+Console.WriteLine("Введите пятизначное число: "); // программа требует пятизначное число, но код универсальный для любого числа, если убрать первое условие.
 int number = Convert.ToInt32(Console.ReadLine());
 number = Math.Abs(number); // исключение проверки количества символов если введут отрицательное число;
 string str = Convert.ToString(number);
@@ -9,7 +9,8 @@ int [] numAr = new int[size];
 int index = size;
 int varnum = 0;
 int markV = 0;
-
+if ((number > 10000) && (number < 100000))
+{
     while (index >0 )  // внесение каждого числа в массив numAr;
     {
         index = index - 1;
@@ -26,7 +27,7 @@ int markV = 0;
     // }
     // Console.WriteLine();
 
-    Console.WriteLine(size / 2); // проверка на палиндром;
+    // Console.WriteLine(size / 2); // проверка на палиндром;
     while (index < size/2)
     {
         if (numAr[index] == numAr[size-1-index])
@@ -45,4 +46,9 @@ int markV = 0;
     {
         Console.WriteLine($"Число является палиндромом");
     }
+}
+else
+{
+    Console.WriteLine("Введено некорректное число");
+}
     
