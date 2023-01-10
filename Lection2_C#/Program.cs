@@ -59,49 +59,60 @@
 
 // Таже программа через массив array:
 // Массив задаем через RANDOM;
-void RanArray(int [] collection)
-{
-    int size = collection.Length;
-    int index = 0;
-    while (index < size)
-    {
-        collection[index] = new Random().Next(1, 10);
-        index++;
-    }
-}
-void PrintArray(int[] col)
-{
-    int count = col.Length;
-    int position = 0;
-    while (position < count)
-    {
-        Console.Write($"{col[position]}. ");
-        position++;
-    }
-}
+// void RanArray(int [] collection)
+// {
+//     int size = collection.Length;
+//     int index = 0;
+//     while (index < size)
+//     {
+//         collection[index] = new Random().Next(1, 10);
+//         index++;
+//     }
+// }
+// void PrintArray(int[] col)
+// {
+//     int count = col.Length;
+//     int position = 0;
+//     while (position < count)
+//     {
+//         Console.Write($"{col[position]}. ");
+//         position++;
+//     }
+// }
 
-int Max(int [] mass)
-{
-    int size = mass.Length;
-    int index = 0;
-    int max = mass[1];
-    while (index<size)
-    {
-        if (mass[index] > max)
-        {
-            max = mass[index];
-        }
-        index++;
-    }
-    return max;
-}
+// int Max(int [] mass)
+// {
+//     int size = mass.Length;
+//     int index = 0;
+//     int max = mass[1];
+//     while (index<size)
+//     {
+//         if (mass[index] > max)
+//         {
+//             max = mass[index];
+//         }
+//         index++;
+//     }
+//     return max;
+// }
 
-int [] array = new int[10]; // задание пустого массива на 10 элементов;
-RanArray(array);
-PrintArray(array);
+// int [] array = new int[10]; // задание пустого массива на 10 элементов;
+// RanArray(array);
+// PrintArray(array);
 
-int Maximum = Max(array);
+// int Maximum = Max(array);
 
 
-Console.WriteLine();
-Console.WriteLine(Maximum);
+// Console.WriteLine();
+// Console.WriteLine(Maximum);
+
+// for (int i = 2; i <=10; i++)
+// {
+//     for (int j = 2; j <=10; j++)
+//     {
+//         Console.WriteLine($"{i} x {j} = {i * j}");
+//     }
+//     Console.WriteLine();
+// }
+
+// 
