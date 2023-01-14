@@ -21,8 +21,7 @@ if ((numberA > 0) && (numberB == 0)) // Любое число возведенн
     result = 1;
     Console.WriteLine($"Число {numberA} в степени {numberB} равняется {result}");
 }
-
-else
-
+if (numberA == 0)
+{
     Console.WriteLine("Возведение 0 в степень не допускается"); // много споров о возведении 0 в степень. Принимаю так.
-
+}
