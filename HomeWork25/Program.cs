@@ -7,11 +7,22 @@ Console.WriteLine("Введите число В: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 numberB = Math.Abs(numberB); // исключение отрицательного ввода числа В;
 int result = 1;
-
-for (int i = 0; i < numberB; i++)
+if ((numberA > 0) && (numberB > 0))
 {
-    result = result * numberA;
+    for (int i = 0; i < numberB; i++)
+    {
+        result = result * numberA;
+    }
+
+    Console.WriteLine($"Число {numberA} в степени {numberB} равняется {result}");
+}
+if ((numberA > 0) && (numberB == 0)) // Любое число возведенное в 0 степень даёт 1;
+{
+    result = 1;
+    Console.WriteLine($"Число {numberA} в степени {numberB} равняется {result}");
 }
 
-Console.WriteLine($"Число {numberA} в степени {numberB} равняется {result}");
+else
+
+    Console.WriteLine("Возведение 0 в степень не допускается"); // много споров о возведении 0 в степень. Принимаю так.
 
