@@ -8,11 +8,10 @@ string str = Convert.ToString(number);
 int size = str.Length;
 int sum = 0;
 int tempvar = 0;
-int index = size;
 int printnum = number;
-while (index > 0 )
+while (size > 0 )
     {
-        index = index - 1;
+        size = size - 1;
         tempvar = number %10;
         number = number / 10;
         sum = sum + tempvar;
