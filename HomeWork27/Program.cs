@@ -10,7 +10,7 @@ int sum = 0;
 int tempvar = 0;
 int index = size;
 int printnum = number;
-while (index > 0 )  // внесение цифр из числа в массив (можно конечно не давать право пользователю вводить число);
+while (index > 0 )
     {
         index = index - 1;
         tempvar = number %10;
