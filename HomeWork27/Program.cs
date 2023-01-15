@@ -6,7 +6,6 @@ int number = Convert.ToInt32(Console.ReadLine());
 number = Math.Abs(number); // исключение отрицательного ввода числа для определения длины строки;
 string str = Convert.ToString(number);
 int size = str.Length;
-int [] numbers = new int[size];
 int sum = 0;
 int tempvar = 0;
 int index = size;
@@ -15,9 +14,8 @@ while (index > 0 )  // внесение цифр из числа в массив
     {
         index = index - 1;
         tempvar = number %10;
-        numbers[index] = tempvar;
         number = number / 10;
-        sum = sum + numbers[index];
+        sum = sum + tempvar;
     }
 
 Console.WriteLine();
