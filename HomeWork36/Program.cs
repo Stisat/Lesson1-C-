@@ -17,11 +17,11 @@ void SumOddInd (int [] collect) // Метод нахождения суммы ч
     int count = 0;
     for (int i = 0; i < size; i++)
     {
-        if ((i+1) %2 != 0)
+        if (i %2 != 0)
         {
             result = result + collect[i];
             count = count + 1;
-            Console.WriteLine($"Число на нечетной позиции {i+1}) {collect[i]}.");
+            Console.WriteLine($"Число на нечетной позиции {i}) {collect[i]}.");
         }
     }
     Console.WriteLine($"Количество нечетных позиций в массиве: {count}");
