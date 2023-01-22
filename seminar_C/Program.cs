@@ -313,9 +313,9 @@
 // }
 
 // int[] Revers(int [] array){
-    
+
 //     int temp = 0;
-    
+
 //     for (int i=0; i < array.Length/2; i++){
 //         temp = array[i];
 //         array[i] = array[(array.Length - 1) - i];
@@ -326,7 +326,7 @@
 // }
 
 // int [] intToBin(int num){
-    
+
 //     int temp = num;
 //     int count = 0;
 
@@ -342,7 +342,7 @@
 //         array[i] = num%2; 
 //         num /= 2;
 //     }
-        
+
 //     Revers(array);
 
 //     return array;
@@ -373,6 +373,31 @@
 //     param_2 = temp - param_1;
 
 //     Console.WriteLine(temp);
-    
+
 // }
 
+// Двумерный массив mxn, заполненный случайными целыми числами
+
+// int[,] FillArray(int x, int y)
+// {
+//     int[,] arr = new int[x, y];
+//     for (int i = 0; i < arr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < arr.GetLength(1); j++)
+//         {
+//             arr[i,j] = i+j;
+//         }
+//     }
+//     return 
+// }
+
+// void PrintArray (int [,] col)
+// {
+//     for (int i = 0; i < col.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < col.GetLength(1); j++)
+//         {
+//             Console.Write("{col[i,j]}");
+//         }
+//     }
+// }
